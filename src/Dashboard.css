@@ -1,0 +1,51 @@
+.icon-color {
+    color: #ff7315;
+}
+
+.dibooking-orange {
+    background-color: #ff7315;
+}
+
+td .button-detail {
+    background-color: #ff7315;
+}
+
+td .button-detail:hover {
+    background-color: #ff7f2a;
+}
+
+td .button-terima {
+    background-color: #1DD100;
+}
+
+td .button-terima:hover {
+    background-color: #3dff1f;
+}
+
+td .button-tolak {
+    background-color: #FA0000;
+}
+
+td .button-tolak:hover {
+    background-color: #ff2f2f;
+}
+
+.toggled {
+    overflow: visible;
+    width: 6.5rem !important;
+    transition: 0.2s;
+}
+
+.accordion {
+    transition: 0.2s;
+}
+
+.hamburger {
+    width: 0!important;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.sidebar {
+    min-height: 100%;
+}
