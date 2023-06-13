@@ -124,7 +124,6 @@ function Detail() {
                 <Row>
                   <Col sm="12" className="d-flex flex-column justify-content-center align-content-center pt-4 pb-4">
                     <TextInputWithFloatLabel
-                      label='Nama Lengkap'
                       id='namaLengkap'
                       type='text'
                       placeholder="Nama Lengkap"
@@ -134,7 +133,6 @@ function Detail() {
                   </Col>
                   <Col sm="12" className="d-flex flex-column justify-content-center align-content-center pb-4">
                     <TextInputWithFloatLabel
-                      label='Email'
                       id='email'
                       type='text'
                       placeholder="Email"
@@ -144,7 +142,6 @@ function Detail() {
                   </Col>
                   <Col sm="12" className="d-flex flex-column justify-content-center align-content-center pb-4">
                     <TextInputWithFloatLabel
-                      label='Nomor Telepon'
                       id='nomorTelepon'
                       type='text'
                       placeholder="081234567890"
