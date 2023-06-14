@@ -1,10 +1,13 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import MyVerticallyCenteredModal from "../components/ModalDetail";
+import MyVerticallyCenteredModal from "../components/modal-detail/ModalDetail";
 import { data } from "../data/data";
+import ModalTambahLap from "../components/modal-tambah-lapangan/ModalTambahLap";
 
 function Kelola() {
   const [modalShow, setModalShow] = useState(false);
+  const [modalLap, setModalLap] = useState(false);
   const [id, setId] = useState(0);
 
   return (
@@ -13,18 +16,25 @@ function Kelola() {
         show={modalShow}
         onHide={() => setModalShow(false)}
         id={id}
-        title={"modal"}
+        title={"Detail Lapangan"}
+      />
+      <ModalTambahLap
+        show={modalLap}
+        onHide={() => setModalLap(false)}
+        title={"Tambah Lapangan"}
       />
       <div className="container-fluid">
         {/* <!-- Page Heading --> */}
         <div className="d-sm-flex align-items-center justify-content-between mb-4">
           <h1 className="h3 mb-0 text-gray-800">Kelola Lapangan</h1>
-          <a
-            href="#"
+          <button
+            onClick={() => {
+              setModalLap(true)
+            }}
             className="d-sm-inline-block btn btn-md btn-outline-dark shadow-sm"
           >
             <i className="fas fa-plus"></i> Tambah Lapangan
-          </a>
+          </button>
         </div>
 
         <table className="table table-striped text-center">

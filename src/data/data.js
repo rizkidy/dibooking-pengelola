@@ -5,13 +5,15 @@ export const data = [
     kategori: "Futsal",
     lokasi: "Jakarta Selatan",
     harga: "Rp 100.000",
+    fasilitas: "free 2 botol minum, tersedia kamar mandi, tersedia musholla",
   },
   {
     id: 2,
-    nama: "Lapangan Futsal Jakselmania",
-    kategori: "Futsal",
+    nama: "Lapangan Bulu Tangkis Jakselmania",
+    kategori: "Bulu Tangkis",
     lokasi: "Jakarta Selatan",
-    harga: "Rp 75.000",
+    harga: "Rp 125.000",
+    fasilitas: "free 2 botol minum, tersedia kamar mandi, tersedia musholla",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const data = [
     kategori: "Futsal",
     lokasi: "Jakarta Selatan",
     harga: "Rp 75.000",
+    fasilitas: "free 2 botol minum, tersedia kamar mandi, tersedia musholla",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const data = [
     kategori: "Futsal",
     lokasi: "Jakarta Selatan",
     harga: "Rp 75.000",
+    fasilitas: "free 2 botol minum, tersedia kamar mandi, tersedia musholla",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export const data = [
     kategori: "Futsal",
     lokasi: "Jakarta Selatan",
     harga: "Rp 75.000",
+    fasilitas: "free 2 botol minum, tersedia kamar mandi, tersedia musholla",
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ export const data = [
     kategori: "Futsal",
     lokasi: "Jakarta Selatan",
     harga: "Rp 75.000",
+    fasilitas: "free 2 botol minum, tersedia kamar mandi, tersedia musholla",
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ export const data = [
     kategori: "Futsal",
     lokasi: "Jakarta Selatan",
     harga: "Rp 75.000",
+    fasilitas: "free 2 botol minum, tersedia kamar mandi, tersedia musholla",
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ export const data = [
     kategori: "Futsal",
     lokasi: "Jakarta Selatan",
     harga: "Rp 75.000",
+    fasilitas: "free 2 botol minum, tersedia kamar mandi, tersedia musholla",
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ export const data = [
     kategori: "Futsal",
     lokasi: "Jakarta Selatan",
     harga: "Rp 75.000",
+    fasilitas: "free 2 botol minum, tersedia kamar mandi, tersedia musholla",
   },
   {
     id: 10,
@@ -68,5 +77,6 @@ export const data = [
     kategori: "Futsal",
     lokasi: "Jakarta Selatan",
     harga: "Rp 75.000",
+    fasilitas: "free 2 botol minum, tersedia kamar mandi, tersedia musholla",
   },
 ];
