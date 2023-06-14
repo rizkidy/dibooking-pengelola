@@ -19,6 +19,7 @@ function ModalTambahLap(props) {
                             <Form.Control type="text" placeholder="Nama lapangan" />
                         </Form.Group>
                         <Form.Group>
+                        <Form.Label>Kategori</Form.Label>
                             <Form.Select className='mb-3' aria-label="Default select example">
                                 <option>Pilih kategori Lapangan</option>
                                 <option value="1">Sepak Bola</option>

@@ -34,21 +34,28 @@ function MyVerticallyCenteredModal(props) {
                 <Form.Control type="text" placeholder="Nama lapangan" value={item.nama} />
               </Form.Group>
               <Form.Group>
+                <Form.Label>Kategori</Form.Label>
                 <Form.Select className='mb-3' aria-label="Default select example">
                   <option>{item.kategori}</option>
+                  <option value="1">Sepak Bola</option>
+                  <option value="2">Futsal</option>
+                  <option value="3">Bulu Tangkis</option>
+                  <option value="4">Basket</option>
+                  <option value="5">Voli</option>
+                  <option value="6">Billiard</option>
                 </Form.Select>
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
                 <Form.Label>Lokasi</Form.Label>
-                <Form.Control type="text" placeholder="Lokasi Lapangan" value={item.lokasi}/>
+                <Form.Control type="text" placeholder="Lokasi Lapangan" value={item.lokasi} />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
                 <Form.Label>Harga</Form.Label>
-                <Form.Control type="text" placeholder="Harga Lapangan" value={item.harga}/>
+                <Form.Control type="text" placeholder="Harga Lapangan" value={item.harga} />
               </Form.Group>
               <Form.Group className="mb-3" controlId="textAreaFasilitas">
                 <Form.Label>Fasilitas Lainnya</Form.Label>
-                <Form.Control as="textarea" rows={3} value={item.fasilitas}/>
+                <Form.Control as="textarea" rows={3} value={item.fasilitas} />
               </Form.Group>
             </Form>
           </Modal.Body>
