@@ -1,9 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import MyVerticallyCenteredModal from '../components/ModalDetail'
+
 
 function Kelola() {
+    const [modalShow, setModalShow] = React.useState(false);
     return (
         <div>
+            <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                title={'modal'}
+            />
             <div className="container-fluid">
 
                 {/* <!-- Page Heading --> */}
@@ -30,7 +38,7 @@ function Kelola() {
                             <td>Futsal</td>
                             <td>Jakarta Selatan</td>
                             <td>Rp 75.000</td>
-                            <td><button className="btn btn-sm text-white button-detail">Detail</button></td>
+                            <td><button className="btn btn-sm text-white button-detail" onClick={() => setModalShow(true)}>Detail</button></td>
                         </tr>
                         <tr className="text-dark">
                             <th scope="row">2</th>
@@ -38,7 +46,7 @@ function Kelola() {
                             <td>Futsal</td>
                             <td>Jakarta Selatan</td>
                             <td>Rp 75.000</td>
-                            <td><button className="btn btn-sm text-white button-detail">Detail</button></td>
+                            <td><button className="btn btn-sm text-white button-detail" onClick={() => setModalShow(true)}>Detail</button></td>
                         </tr>
                         <tr className="text-dark">
                             <th scope="row">3</th>
