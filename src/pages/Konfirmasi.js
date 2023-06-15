@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React from 'react';
+import { pesan } from '../data/DataPemesanan';
 
 function Konfirmasi() {
     return (
@@ -23,87 +24,18 @@ function Konfirmasi() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="text-dark">
-                            <th scope="row">1</th>
-                            <td>Lapangan Futsal Jakselmania</td>
-                            <td>Andrianto</td>
-                            <td>Jakarta Selatan</td>
-                            <td>08.00 - 09.00</td>
-                            <td><button className="btn btn-sm text-white button-terima">Terima</button> | <button className="btn btn-sm text-white button-tolak">Tolak</button></td>
-                        </tr>
-                        <tr className="text-dark">
-                            <th scope="row">2</th>
-                            <td>Lapangan Futsal Jakselmania</td>
-                            <td>Andrianto</td>
-                            <td>Jakarta Selatan</td>
-                            <td>08.00 - 09.00</td>
-                            <td><button className="btn btn-sm text-white button-terima">Terima</button> | <button className="btn btn-sm text-white button-tolak">Tolak</button></td>
-                        </tr>
-                        <tr className="text-dark">
-                            <th scope="row">3</th>
-                            <td>Lapangan Futsal Jakselmania</td>
-                            <td>Andrianto</td>
-                            <td>Jakarta Selatan</td>
-                            <td>08.00 - 09.00</td>
-                            <td><button className="btn btn-sm text-white button-terima">Terima</button> | <button className="btn btn-sm text-white button-tolak">Tolak</button></td>
-                        </tr>
-                        <tr className="text-dark">
-                            <th scope="row">4</th>
-                            <td>Lapangan Futsal Jakselmania</td>
-                            <td>Andrianto</td>
-                            <td>Jakarta Selatan</td>
-                            <td>08.00 - 09.00</td>
-                            <td><button className="btn btn-sm text-white button-terima">Terima</button> | <button className="btn btn-sm text-white button-tolak">Tolak</button></td>
-                        </tr>
-                        <tr className="text-dark">
-                            <th scope="row">5</th>
-                            <td>Lapangan Futsal Jakselmania</td>
-                            <td>Andrianto</td>
-                            <td>Jakarta Selatan</td>
-                            <td>08.00 - 09.00</td>
-                            <td><button className="btn btn-sm text-white button-terima">Terima</button> | <button className="btn btn-sm text-white button-tolak">Tolak</button></td>
-                        </tr>
-                        <tr className="text-dark">
-                            <th scope="row">6</th>
-                            <td>Lapangan Futsal Jakselmania</td>
-                            <td>Andrianto</td>
-                            <td>Jakarta Selatan</td>
-                            <td>08.00 - 09.00</td>
-                            <td><button className="btn btn-sm text-white button-terima">Terima</button> | <button className="btn btn-sm text-white button-tolak">Tolak</button></td>
-                        </tr>
-                        <tr className="text-dark">
-                            <th scope="row">7</th>
-                            <td>Lapangan Futsal Jakselmania</td>
-                            <td>Andrianto</td>
-                            <td>Jakarta Selatan</td>
-                            <td>08.00 - 09.00</td>
-                            <td><button className="btn btn-sm text-white button-terima">Terima</button> | <button className="btn btn-sm text-white button-tolak">Tolak</button></td>
-                        </tr>
-                        <tr className="text-dark">
-                            <th scope="row">8</th>
-                            <td>Lapangan Futsal Jakselmania</td>
-                            <td>Andrianto</td>
-                            <td>Jakarta Selatan</td>
-                            <td>08.00 - 09.00</td>
-                            <td><button className="btn btn-sm text-white button-terima">Terima</button> | <button className="btn btn-sm text-white button-tolak">Tolak</button></td>
-                        </tr>
-                        <tr className="text-dark">
-                            <th scope="row">9</th>
-                            <td>Lapangan Futsal Jakselmania</td>
-                            <td>Andrianto</td>
-                            <td>Jakarta Selatan</td>
-                            <td>08.00 - 09.00</td>
-                            <td><button className="btn btn-sm text-white button-terima">Terima</button> | <button className="btn btn-sm text-white button-tolak">Tolak</button></td>
-                        </tr>
-                        <tr className="text-dark">
-                            <th scope="row">10</th>
-                            <td>Lapangan Futsal Jakselmania</td>
-                            <td>Andrianto</td>
-                            <td>Jakarta Selatan</td>
-                            <td>08.00 - 09.00</td>
-                            <td><button className="btn btn-sm text-white button-terima">Terima</button> | <button className="btn btn-sm text-white button-tolak">Tolak</button></td>
-                        </tr>
-                        
+                        {pesan.map((item, index) => (
+                            <tr className="text-dark" key={item.id}>
+                                <th scope="row">{index + 1}</th>
+                                <td>{item.nama}</td>
+                                <td>{item.penyewa}</td>
+                                <td>{item.lokasi}</td>
+                                <td>{item.waktu}</td>
+                                <td>
+                                    <button className="btn btn-sm text-white button-terima">Terima</button> | <button className="btn btn-sm text-white button-tolak">Tolak</button>
+                                </td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
 

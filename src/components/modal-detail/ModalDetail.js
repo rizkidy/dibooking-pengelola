@@ -4,7 +4,7 @@ import './modal-detail.css';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Modal } from "react-bootstrap";
-import { data } from "../../data/data";
+import { data } from "../../data/DataKelola";
 
 function MyVerticallyCenteredModal(props) {
   const [dataById, setDataById] = useState([]);

@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import MyVerticallyCenteredModal from "../components/modal-detail/ModalDetail";
-import { data } from "../data/data";
+import { data } from "../data/DataKelola";
 import ModalTambahLap from "../components/modal-tambah-lapangan/ModalTambahLap";
 
 function Kelola() {
