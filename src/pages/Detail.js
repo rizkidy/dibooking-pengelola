@@ -3,7 +3,7 @@ import { Col, Container, Row, Card, Image, Button, Form, FloatingLabel } from "r
 import TextInputWithFloatLabel from '../components/TextInputWithFloatlabel';
 
 function Detail() {
-  const dataPengelola = {
+  const dataPenyewa = {
     imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp",
     name: "Rizki Dwi Yulianto",
   };
@@ -11,7 +11,7 @@ function Detail() {
   const [form, setForm] = React.useState({
     nama: "",
     email: "",
-    nomor_ponser: "",
+    nomor_ponsel: "",
     lokasi: ""
   });
 
@@ -94,11 +94,11 @@ function Detail() {
             <Card className="mb-4">
               <Card.Body className="text-center">
                 <Image
-                  src={dataPengelola.imageSrc}
+                  src={dataPenyewa.imageSrc}
                   alt="avatar"
-                  style={{width: '150px'}}
-                  roundedCircle/>
-                <Card.Title className="mt-3">{dataPengelola.name}</Card.Title>
+                  style={{ width: '150px' }}
+                  roundedCircle />
+                <Card.Title className="mt-3">{dataPenyewa.name}</Card.Title>
                 <div className="d-flex justify-content-center mb-2">
                   <Button style={isFillButtonHovered ? buttonFillHover : buttonFill}
                     onMouseEnter={() => setFillButtonHovered(true)}
@@ -124,6 +124,7 @@ function Detail() {
                 <Row>
                   <Col sm="12" className="d-flex flex-column justify-content-center align-content-center pt-4 pb-4">
                     <TextInputWithFloatLabel
+                      label='Nama Lengkap'
                       id='namaLengkap'
                       type='text'
                       placeholder="Nama Lengkap"
@@ -133,6 +134,7 @@ function Detail() {
                   </Col>
                   <Col sm="12" className="d-flex flex-column justify-content-center align-content-center pb-4">
                     <TextInputWithFloatLabel
+                      label='Email'
                       id='email'
                       type='text'
                       placeholder="Email"
@@ -142,6 +144,7 @@ function Detail() {
                   </Col>
                   <Col sm="12" className="d-flex flex-column justify-content-center align-content-center pb-4">
                     <TextInputWithFloatLabel
+                      label='Nomor Telepon'
                       id='nomorTelepon'
                       type='text'
                       placeholder="081234567890"
@@ -189,8 +192,10 @@ function Detail() {
           </Col>
         </Row>
       </Container>
+
     </>
   )
 }
+
 
 export default Detail
